@@ -19,7 +19,6 @@ public class VirtualDeviceUtil {
 	private static String[] imsiIds = {"310260000000000"};
 	private static String[] known_files = {"/system/lib/libc_malloc_debug_qemu.so","/sys/qemu_trace","/system/bin/qemu-props"};
 	private static String[] known_qemu_drivers = {"goldfish"};
-
 	
 	public static boolean checkVirtualDevice(Context context) {
 		return isEmulatorByImei(context) || checkEmulatorBuild() || checkEmulatorFiles() || checkQEmuDriverFile();
